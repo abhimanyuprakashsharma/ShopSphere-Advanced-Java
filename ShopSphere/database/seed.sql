@@ -7,3 +7,9 @@ INSERT INTO products(category_id,name,brand,description,price,discount,stock,sta
 INSERT INTO coupons(code,discount_type,discount_value,minimum_order,maximum_discount,expiry_date,status)
 VALUES ('WELCOME10','PERCENT',10,500,200,DATE_ADD(CURRENT_DATE,INTERVAL 90 DAY),TRUE)
 ON DUPLICATE KEY UPDATE status=TRUE, expiry_date=DATE_ADD(CURRENT_DATE,INTERVAL 90 DAY);
+
+-- Default Admin user (Password: Admin@1234)
+INSERT INTO users(name, email, password, mobile, role, status)
+VALUES ('Admin', 'admin@shopsphere.com', 'PBKDF2$AWsVBZbT7A64BBzaq+MjxA==$lV3dlCpuJqEZbCOjfaWEXpJrN5yRvPxL5FLuqyiS6NQ=', '9876543210', 'ADMIN', TRUE)
+ON DUPLICATE KEY UPDATE role='ADMIN';
+
