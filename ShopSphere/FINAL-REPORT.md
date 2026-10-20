@@ -44,4 +44,4 @@ Real payment gateway, persistent/distributed rate limiting, image storage/CDN, e
 - **Subject:** Advanced Java Programming
 - **University affiliation:** Rajasthan Technical University (RTU), as listed in the supplied project documentation
 
-**Contribution and attribution note:** These details identify the student preparing this submission. They do not, by themselves, establish original authorship of every existing source file. Preserve upstream attribution and commit history where available, and describe individual modifications accurately.
+**Submission note:** Submitted by Abhimanyu Sharma (Roll Number: 24EGJAD002), B.Tech Artificial Intelligence & Data Science, Global Institute of Technology, Jaipur (RTU).

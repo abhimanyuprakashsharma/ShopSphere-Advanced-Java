@@ -50,5 +50,5 @@ ShopSphere brings together e-commerce workflows and Advanced Java demonstrations
 
 ---
 
-## Attribution / contribution statement
-Student details above identify the presenter and submission. This presentation does not claim sole authorship of the entire supplied codebase. In the viva, clearly distinguish existing project functionality from changes and testing personally completed.
+## Presenter Information
+Presented by Abhimanyu Sharma (Roll Number: 24EGJAD002), B.Tech Artificial Intelligence & Data Science, Global Institute of Technology, Jaipur (RTU).

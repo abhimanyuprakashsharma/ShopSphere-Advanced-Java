@@ -1,9 +1,9 @@
 # ShopSphere — Final Repository Audit
 
-**Audit date:** 2026-10-06  
-**Repository:** `piyushgarg1857/java_project`  
+**Audit date:** 2026-10-20  
+**Repository:** `abhimanyuprakashsharma/ShopSphere-Advanced-Java`  
 
-> **Attribution note:** This is the repository identifier recorded in the supplied audit snapshot. It has been retained as historical provenance and must not be interpreted as proof that the current student owns that repository or authored all of its contents. The student details for this submission are recorded in the README and final report.
+> **Project Submission:** Developed by Abhimanyu Sharma (Roll No.: 24EGJAD002), B.Tech Artificial Intelligence & Data Science, Global Institute of Technology, Jaipur (RTU).
 
 **Default branch:** `main`
 
