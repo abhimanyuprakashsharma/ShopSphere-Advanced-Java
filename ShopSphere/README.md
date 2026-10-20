@@ -1,6 +1,9 @@
 # ShopSphere — Advanced Java E-Commerce Platform
 
 <p align="center">
+  <a href="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions">
+    <img src="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
+  </a>
   <a href="https://shopsphere-online.azurewebsites.net">
     <img src="https://img.shields.io/badge/Azure%20App%20Service-Live%20Demo-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Deployment" />
   </a>
