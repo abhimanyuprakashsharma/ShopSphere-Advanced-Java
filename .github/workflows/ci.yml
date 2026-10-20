@@ -1,0 +1,54 @@
+name: ShopSphere CI & Azure Deployment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    name: Build & Test Java Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Build & Test ShopSphere with Maven
+        run: |
+          cd ShopSphere
+          mvn -B clean test package
+
+      - name: Archive Built WAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopsphere-war
+          path: ShopSphere/target/shopsphere.war
+
+  deploy-to-azure:
+    name: Deploy to Azure App Service
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Download Built WAR
+        uses: actions/download-artifact@v4
+        with:
+          name: shopsphere-war
+          path: ./artifacts
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        continue-on-error: true
+        with:
+          app-name: 'shopsphere-online'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ./artifacts/shopsphere.war
