@@ -4,10 +4,10 @@
   <a href="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions">
     <img src="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
   </a>
-  <a href="https://shopsphere-online.azurewebsites.net">
-    <img src="https://img.shields.io/badge/Azure%20App%20Service-Live%20Demo-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Deployment" />
+  <a href="http://localhost:8080/shopsphere/">
+    <img src="https://img.shields.io/badge/Local%20Server-localhost%3A8080-success?style=for-the-badge&logo=apachetomcat&logoColor=black" alt="Local Server" />
   </a>
-  <a href="https://shopsphere-online.azurewebsites.net/health">
+  <a href="http://localhost:8080/shopsphere/health">
     <img src="https://img.shields.io/badge/Health%20Check-UP%20(200)-success?style=for-the-badge&logo=statuspage" alt="System Health" />
   </a>
   <a href="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java">
@@ -42,21 +42,21 @@
 | **Subject** | **Advanced Java Programming (RTU Syllabus & Lab)** |
 | **GitHub Profile** | [**@abhimanyuprakashsharma**](https://github.com/abhimanyuprakashsharma) |
 | **GitHub Repository** | [**ShopSphere-Advanced-Java**](https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java) |
-| **Live Web Application** | [**shopsphere-online.azurewebsites.net**](https://shopsphere-online.azurewebsites.net) |
+| **Local Web Application** | [**http://localhost:8080/shopsphere/**](http://localhost:8080/shopsphere/) |
 
 ---
 
-## 🌐 Live Azure Deployment & Demo Access
+## 🌐 Local Application Access & Demo Credentials
 
-The complete application is hosted on **Microsoft Azure App Service** with a managed MySQL 8.0 backend:
+The complete application is configured to run locally on **Apache Tomcat 10.1+** with a **MySQL 8.0** backend:
 
-- 🚀 **Live Storefront URL:** [https://shopsphere-online.azurewebsites.net](https://shopsphere-online.azurewebsites.net)
-- 🩺 **System Health Endpoint:** [https://shopsphere-online.azurewebsites.net/health](https://shopsphere-online.azurewebsites.net/health)
-- 🛡️ **Admin Panel:** [https://shopsphere-online.azurewebsites.net/admin/dashboard](https://shopsphere-online.azurewebsites.net/admin/dashboard)
+- 🚀 **Local Storefront URL:** [http://localhost:8080/shopsphere/](http://localhost:8080/shopsphere/)
+- 🩺 **System Health Endpoint:** [http://localhost:8080/shopsphere/health](http://localhost:8080/shopsphere/health)
+- 🛡️ **Admin Panel:** [http://localhost:8080/shopsphere/admin/dashboard](http://localhost:8080/shopsphere/admin/dashboard)
 
 ### 🔑 Demo Login Credentials
 
-You can test all functionalities immediately using the pre-configured accounts below, or register your own account on the live site:
+You can test all functionalities immediately using the pre-configured accounts below, or register your own account on your local deployment:
 
 | Role | Email Address | Password | Permissions & Features |
 |:---|:---|:---|:---|
@@ -81,7 +81,7 @@ The application features a bespoke design system:
 ShopSphere-Advanced-Java/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml               # GitHub Actions CI/CD (Build, Test & Azure Auto-Deploy)
+│       └── ci.yml               # GitHub Actions CI/CD (Build & Automated Unit Tests)
 │
 ├── ShopSphere/                 # Enterprise E-Commerce Web Application (Java EE)
 │   ├── src/
@@ -116,7 +116,7 @@ ShopSphere-Advanced-Java/
 │   └── LAB_No.7/               # Advanced Servlets — Filters, Listeners, Session & Auth Flow
 │
 ├── .gitignore                  # Git exclusions for target/, class files, IDE configs
-└── README.md                   # Project overview, live links & student details (this file)
+└── README.md                   # Project overview, local setup & student details (this file)
 ```
 
 ---
