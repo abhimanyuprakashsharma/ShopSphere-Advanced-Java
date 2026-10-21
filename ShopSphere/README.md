@@ -4,10 +4,10 @@
   <a href="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions">
     <img src="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
   </a>
-  <a href="https://shopsphere-online.azurewebsites.net">
-    <img src="https://img.shields.io/badge/Azure%20App%20Service-Live%20Demo-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Deployment" />
+  <a href="http://localhost:8080/shopsphere/">
+    <img src="https://img.shields.io/badge/Local%20Server-localhost%3A8080-success?style=for-the-badge&logo=apachetomcat&logoColor=black" alt="Local Server" />
   </a>
-  <a href="https://shopsphere-online.azurewebsites.net/health">
+  <a href="http://localhost:8080/shopsphere/health">
     <img src="https://img.shields.io/badge/Health%20Check-UP%20(200)-success?style=for-the-badge&logo=statuspage" alt="System Health" />
   </a>
   <a href="https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java">
@@ -21,11 +21,11 @@
 
 ---
 
-## 🌐 Live Application & Demo Access
+## 🌐 Local Application & Demo Access
 
-- 🚀 **Live Storefront:** [https://shopsphere-online.azurewebsites.net](https://shopsphere-online.azurewebsites.net)
-- 🩺 **Health Check:** [https://shopsphere-online.azurewebsites.net/health](https://shopsphere-online.azurewebsites.net/health)
-- 🛡️ **Admin Panel:** [https://shopsphere-online.azurewebsites.net/admin/dashboard](https://shopsphere-online.azurewebsites.net/admin/dashboard)
+- 🚀 **Local Storefront:** [http://localhost:8080/shopsphere/](http://localhost:8080/shopsphere/)
+- 🩺 **Health Check:** [http://localhost:8080/shopsphere/health](http://localhost:8080/shopsphere/health)
+- 🛡️ **Admin Panel:** [http://localhost:8080/shopsphere/admin/dashboard](http://localhost:8080/shopsphere/admin/dashboard)
 
 ### 🔑 Demo Login Accounts
 
@@ -79,7 +79,7 @@ ShopSphere/
 | **Theme / UI** | Midnight Deep Navy (`#090d16`) & Luminous Gold (`#e2b76e`), Glassmorphism |
 | **Build Tool** | Apache Maven 3.9+ |
 | **Server** | Apache Tomcat 10.1 / 11 |
-| **Cloud Hosting** | Microsoft Azure App Service (Linux) |
+| **Deployment** | Localhost / Apache Tomcat 10.1+ (Linux & Windows) |
 | **CI/CD** | GitHub Actions Pipeline |
 
 ---
@@ -176,7 +176,7 @@ Access at: `http://localhost:8080/shopsphere/`
 | **University** | **Rajasthan Technical University (RTU), Kota** |
 | **GitHub** | [**@abhimanyuprakashsharma**](https://github.com/abhimanyuprakashsharma) |
 | **Repository** | [**ShopSphere-Advanced-Java**](https://github.com/abhimanyuprakashsharma/ShopSphere-Advanced-Java) |
-| **Live App** | [**shopsphere-online.azurewebsites.net**](https://shopsphere-online.azurewebsites.net) |
+| **Local App URL** | [**http://localhost:8080/shopsphere/**](http://localhost:8080/shopsphere/) |
 
 ---
 
