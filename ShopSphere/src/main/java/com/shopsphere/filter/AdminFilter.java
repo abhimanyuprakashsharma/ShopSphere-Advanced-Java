@@ -19,6 +19,16 @@ public class AdminFilter implements Filter {
             resp.sendRedirect(req.getContextPath() + "/login"); 
             return; 
         }
+        if (!"ADMIN".equalsIgnoreCase(user.getRole())) {
+            try {
+                com.shopsphere.dao.UserDAO dao = new com.shopsphere.dao.UserDAO();
+                User refreshed = dao.findByEmail(user.getEmail());
+                if (refreshed != null && "ADMIN".equalsIgnoreCase(refreshed.getRole())) {
+                    session.setAttribute("loggedInUser", refreshed);
+                    user = refreshed;
+                }
+            } catch (Exception ignored) {}
+        }
         if (!"ADMIN".equalsIgnoreCase(user.getRole())) { 
             resp.sendError(HttpServletResponse.SC_FORBIDDEN, "Admin access required"); 
             return; 

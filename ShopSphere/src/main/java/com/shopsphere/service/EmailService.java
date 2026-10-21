@@ -80,7 +80,7 @@ public class EmailService {
 
         if (SMTP_USER.isBlank() || SMTP_PASS.isBlank()) {
             LOGGER.info(String.format(
-                "[SMTP SIMULATED EMAIL] To: %s | Subject: %s | App URL: http://localhost:8080/shopsphere",
+                "[SMTP SIMULATED EMAIL] To: %s | Subject: %s | App URL: https://shopsphere-online.azurewebsites.net",
                 recipientEmail, subject
             ));
             return;
@@ -165,13 +165,13 @@ public class EmailService {
 
              // Track Order Button
              + "<div style='text-align: center; margin-top: 25px;'>"
-             + "  <a href='http://localhost:8080/shopsphere/order-detail?orderId=" + orderId + "' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 13px 28px; font-size: 12px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 6px;'>Track Order Details →</a>"
+             + "  <a href='https://shopsphere-online.azurewebsites.net/order-detail?orderId=" + orderId + "' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 13px 28px; font-size: 12px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 6px;'>Track Order Details →</a>"
              + "</div>"
 
              // Footer
              + "<div style='border-top: 1px solid #222; margin-top: 30px; padding-top: 15px; text-align: center; font-size: 11px; color: #666;'>"
              + "  <p style='margin: 0;'>© 2026 ShopSphere E-Commerce Ltd. All rights reserved.</p>"
-             + "  <p style='margin: 4px 0 0;'>Need help? Contact support at support@shopsphere.local</p>"
+             + "  <p style='margin: 4px 0 0;'>Need help? Contact support at support@shopsphere-online.azurewebsites.net</p>"
              + "</div>"
 
              + "</div></body></html>";
@@ -215,7 +215,7 @@ public class EmailService {
              + "  <strong style='color: #d8c8a8;'>₹" + String.format("%.2f", totalAmount) + "</strong>"
              + "</div>"
              + "<div style='text-align: center; margin-top: 25px;'>"
-             + "  <a href='http://localhost:8080/shopsphere/order-detail?orderId=" + orderId + "' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 12px 24px; font-size: 11px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px;'>View Order Status →</a>"
+             + "  <a href='https://shopsphere-online.azurewebsites.net/order-detail?orderId=" + orderId + "' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 12px 24px; font-size: 11px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px;'>View Live Order Status →</a>"
              + "</div>"
              + "<p style='color: #666; font-size: 11px; text-align: center; margin-top: 30px;'>© 2026 ShopSphere E-Commerce. All rights reserved.</p>"
              + "</div></body></html>";
@@ -239,7 +239,7 @@ public class EmailService {
              + "<div style='font-size: 40px; margin: 15px 0;'>✨</div>"
              + "<h2 style='color: #f3efe7; margin: 0 0 10px;'>Welcome to the World of Luxury Shopping</h2>"
              + "<p style='font-size: 14px; color: #a6a19a; line-height: 1.6; margin-bottom: 25px;'>Hello <strong>" + (userName != null && !userName.isBlank() ? userName : "Valued Member") + "</strong>, thank you for joining ShopSphere. Explore our curated collections of premium audio, footwear, watches, and designer lifestyle products.</p>"
-             + "<a href='http://localhost:8080/shopsphere/products' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 14px 28px; font-size: 12px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px;'>Start Exploring →</a>"
+             + "<a href='https://shopsphere-online.azurewebsites.net/products' style='display: inline-block; background: #d8c8a8; color: #080808; text-decoration: none; padding: 14px 28px; font-size: 12px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px;'>Start Exploring →</a>"
              + "<p style='color: #666; font-size: 11px; text-align: center; margin-top: 30px;'>© 2026 ShopSphere E-Commerce. All rights reserved.</p>"
              + "</div></body></html>";
     }

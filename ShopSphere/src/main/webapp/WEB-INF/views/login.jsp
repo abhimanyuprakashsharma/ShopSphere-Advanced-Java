@@ -8,11 +8,11 @@
     <title>Sign In — ShopSphere</title>
     <link rel="stylesheet" href="<%= ctx %>/assets/css/app.css">
     <style>
-        .auth-divider { display: flex; align-items: center; margin: 20px 0; color: var(--muted, #706b64); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
-        .auth-divider::before, .auth-divider::after { content: ""; flex: 1; border-bottom: 1px solid var(--line, rgba(255,255,255,.12)); }
-        .auth-divider span { padding: 0 12px; }
-        .google-btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 12px; background: #161616; border: 1px solid var(--line, rgba(255,255,255,.18)); color: var(--text, #f3efe7); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.25s ease; text-decoration: none; box-sizing: border-box; }
-        .google-btn:hover { background: #222; border-color: var(--accent, #d8c8a8); color: var(--accent, #d8c8a8); }
+        .auth-divider { display: flex; align-items: center; margin: 24px 0; color: var(--muted); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; }
+        .auth-divider::before, .auth-divider::after { content: ""; flex: 1; border-bottom: 1px solid var(--line); }
+        .auth-divider span { padding: 0 14px; }
+        .google-btn { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 13px 18px; background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--text); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; text-decoration: none; box-sizing: border-box; }
+        .google-btn:hover { background: rgba(255,255,255,0.08); border-color: var(--accent); color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
